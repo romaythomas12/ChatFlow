@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		52A20FD186023398E7B7FB14 /* Pods_ChatFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582DD3C1D4C71535C948F62D /* Pods_ChatFlow.framework */; };
+		C7D1C4802AE338AD4F496A2C /* Pods_ChatFlowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28647439A7E37575AED929B /* Pods_ChatFlowTests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B1F7F37B2CD82B750047AE6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +29,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AC656BC6C734A060ED8A38F /* Pods-ChatFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatFlow.debug.xcconfig"; path = "Target Support Files/Pods-ChatFlow/Pods-ChatFlow.debug.xcconfig"; sourceTree = "<group>"; };
+		3600EF10284894AD58A6C901 /* Pods-ChatFlowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatFlowTests.release.xcconfig"; path = "Target Support Files/Pods-ChatFlowTests/Pods-ChatFlowTests.release.xcconfig"; sourceTree = "<group>"; };
+		4466F147CAA42042EAE19AAF /* Pods-ChatFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatFlow.release.xcconfig"; path = "Target Support Files/Pods-ChatFlow/Pods-ChatFlow.release.xcconfig"; sourceTree = "<group>"; };
+		53ACB3FCD54DAC31D42EE38E /* Pods-ChatFlowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatFlowTests.debug.xcconfig"; path = "Target Support Files/Pods-ChatFlowTests/Pods-ChatFlowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		582DD3C1D4C71535C948F62D /* Pods_ChatFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F7F3692CD82B730047AE6B /* ChatFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F7F37A2CD82B750047AE6B /* ChatFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F7F3842CD82B750047AE6B /* ChatFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28647439A7E37575AED929B /* Pods_ChatFlowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatFlowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A20FD186023398E7B7FB14 /* Pods_ChatFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D1C4802AE338AD4F496A2C /* Pods_ChatFlowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F662DE91391E3EBCA1ADB73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				582DD3C1D4C71535C948F62D /* Pods_ChatFlow.framework */,
+				B28647439A7E37575AED929B /* Pods_ChatFlowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B1F7F3602CD82B730047AE6B = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +101,8 @@
 				B1F7F37D2CD82B750047AE6B /* ChatFlowTests */,
 				B1F7F3872CD82B750047AE6B /* ChatFlowUITests */,
 				B1F7F36A2CD82B730047AE6B /* Products */,
+				C52AAD63D2A85E6F6BD18C36 /* Pods */,
+				3F662DE91391E3EBCA1ADB73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +116,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C52AAD63D2A85E6F6BD18C36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AC656BC6C734A060ED8A38F /* Pods-ChatFlow.debug.xcconfig */,
+				4466F147CAA42042EAE19AAF /* Pods-ChatFlow.release.xcconfig */,
+				53ACB3FCD54DAC31D42EE38E /* Pods-ChatFlowTests.debug.xcconfig */,
+				3600EF10284894AD58A6C901 /* Pods-ChatFlowTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1F7F38E2CD82B750047AE6B /* Build configuration list for PBXNativeTarget "ChatFlow" */;
 			buildPhases = (
+				6FC5CCF153D1D82FC2E275C3 /* [CP] Check Pods Manifest.lock */,
 				B1F7F3652CD82B730047AE6B /* Sources */,
 				B1F7F3662CD82B730047AE6B /* Frameworks */,
 				B1F7F3672CD82B730047AE6B /* Resources */,
+				987E59CCC8AD42728C1B00A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,8 +148,6 @@
 				B1F7F36B2CD82B730047AE6B /* ChatFlow */,
 			);
 			name = ChatFlow;
-			packageProductDependencies = (
-			);
 			productName = ChatFlow;
 			productReference = B1F7F3692CD82B730047AE6B /* ChatFlow.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1F7F3912CD82B750047AE6B /* Build configuration list for PBXNativeTarget "ChatFlowTests" */;
 			buildPhases = (
+				32F6B8E5C474380E08C7EFC6 /* [CP] Check Pods Manifest.lock */,
 				B1F7F3762CD82B750047AE6B /* Sources */,
 				B1F7F3772CD82B750047AE6B /* Frameworks */,
 				B1F7F3782CD82B750047AE6B /* Resources */,
@@ -134,8 +170,6 @@
 				B1F7F37D2CD82B750047AE6B /* ChatFlowTests */,
 			);
 			name = ChatFlowTests;
-			packageProductDependencies = (
-			);
 			productName = ChatFlowTests;
 			productReference = B1F7F37A2CD82B750047AE6B /* ChatFlowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +191,6 @@
 				B1F7F3872CD82B750047AE6B /* ChatFlowUITests */,
 			);
 			name = ChatFlowUITests;
-			packageProductDependencies = (
-			);
 			productName = ChatFlowUITests;
 			productReference = B1F7F3842CD82B750047AE6B /* ChatFlowUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +262,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32F6B8E5C474380E08C7EFC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatFlowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC5CCF153D1D82FC2E275C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatFlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		987E59CCC8AD42728C1B00A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatFlow/Pods-ChatFlow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatFlow/Pods-ChatFlow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatFlow/Pods-ChatFlow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1F7F3652CD82B730047AE6B /* Sources */ = {
@@ -385,6 +481,7 @@
 		};
 		B1F7F38F2CD82B750047AE6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC656BC6C734A060ED8A38F /* Pods-ChatFlow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,6 +492,7 @@
 				DEVELOPMENT_TEAM = NJT8U2P7YH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -406,7 +504,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -414,7 +512,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.custom.app.ChatFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -424,6 +523,7 @@
 		};
 		B1F7F3902CD82B750047AE6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4466F147CAA42042EAE19AAF /* Pods-ChatFlow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -434,6 +534,7 @@
 				DEVELOPMENT_TEAM = NJT8U2P7YH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -445,7 +546,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -453,7 +554,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.custom.app.ChatFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -463,19 +565,21 @@
 		};
 		B1F7F3922CD82B750047AE6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53ACB3FCD54DAC31D42EE38E /* Pods-ChatFlowTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJT8U2P7YH;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.custom.app.ChatFlowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -486,19 +590,21 @@
 		};
 		B1F7F3932CD82B750047AE6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3600EF10284894AD58A6C901 /* Pods-ChatFlowTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJT8U2P7YH;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.custom.app.ChatFlowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -514,13 +620,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJT8U2P7YH;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.custom.app.ChatFlowUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -536,13 +643,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NJT8U2P7YH;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.custom.app.ChatFlowUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";

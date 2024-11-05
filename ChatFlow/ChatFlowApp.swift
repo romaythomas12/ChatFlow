@@ -11,7 +11,9 @@ import SwiftUI
 struct ChatFlowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                ChatView()
+            } .navigationViewStyle(.stack)
         }
     }
 }

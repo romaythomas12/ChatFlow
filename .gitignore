@@ -1,0 +1,11 @@
+.DS_Store
+
+Pods/
+ChatFlow.xcodeproj/xcuserdata/
+ChatFlow.xcworkspace/xcuserdata/
+
+build/
+dist/
+
+*.generated.swift
+
